@@ -38,7 +38,8 @@
 		{"trigger": "conf", "contents": "\\$conf"},
 		{"trigger": "databases", "contents": "\\$databases"},
 		{"trigger": "is_https", "contents": "\\$is_https"},
-		{"trigger": "language", "contents": "\\$language"},
+		// removed language because it didnt add much but got in the way of trying to type $language->language
+		//{"trigger": "language", "contents": "\\$language"},
 		{"trigger": "user", "contents": "\\$user"},
 
 		{"trigger": "perm-admin", "contents": "access administration pages"},
