@@ -1,0 +1,19 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+        "./install.sh"
+			],
+			"name": "Sublime 3 - Mac OS"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

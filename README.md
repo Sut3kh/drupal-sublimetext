@@ -1,3 +1,12 @@
+# Forked README
+
+Installation
+-------------
+
+### From source
+
+  cp -r . ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Drupal
+
 # Drupal Sublime Text
 
 Adds Drupal 7 snippets/functionality. Find the source on Github: https://github.com/robballou/drupal-sublimetext

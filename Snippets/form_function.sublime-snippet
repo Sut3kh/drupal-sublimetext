@@ -1,7 +1,7 @@
 <snippet>
 	<tabTrigger>form_function</tabTrigger>
 	<scope>source.php</scope>
-<content><![CDATA[/**
+  <content><![CDATA[/**
  * $2
  */
 function ${TM_FILENAME/([^\.]+)\..*/$1/}_${1:function}(\$form, &\$form_state) {
@@ -13,9 +13,16 @@ function ${TM_FILENAME/([^\.]+)\..*/$1/}_${1:function}(\$form, &\$form_state) {
 }${3:
 
 /**
+ * Validation handler for ${TM_FILENAME/([^\.]+)\..*/$1/}_$1
+ */
+function ${TM_FILENAME/([^\.]+)\..*/$1/}_$1_validate(\$form, &\$form_state) {
+
+}}${4:
+
+/**
  * Summit handler for ${TM_FILENAME/([^\.]+)\..*/$1/}_$1
  */
-function ${TM_FILENAME/([^\.]+)\..*/$1/}_$1_submit(\$form, &$form_state) {
+function ${TM_FILENAME/([^\.]+)\..*/$1/}_$1_submit(\$form, &\$form_state) {
 
 }}]]></content>
 </snippet>
