@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp -rv `dirname $0`/* "$HOME/Library/Application Support/Sublime Text 3/Packages/Drupal"
