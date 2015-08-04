@@ -4,7 +4,13 @@
 <content><![CDATA[/**
  * Implements hook_views_api().
  */
-function ${TM_FILENAME/([^\.]+)\..*/$1/}_views_api() {
-	$0
+function ${TM_FILENAME/([^\.]+)\..*/$1/}_views_api()
+{
+	return array
+  (
+    'api' => 3
+  , 'path' => drupal_get_path('module', '${TM_FILENAME/([^\.]+)\..*/$1/}') . '/includes/views'${1:
+  , 'template path' => drupal_get_path('module', '${TM_FILENAME/([^\.]+)\..*/$1/}') . '/themes'}
+  );
 }]]></content>
 </snippet>
