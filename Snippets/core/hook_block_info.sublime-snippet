@@ -3,8 +3,17 @@
 /**
  * Implements hook_block_info().
  */
-function ${TM_FILENAME/([^\.]+)\..*/$1/}_block_info() {
-	$0
+function ${TM_FILENAME/([^\.]+)\..*/$1/}_block_info()
+{
+  \$blocks = array();
+
+	\$blocks['${TM_FILENAME/([^\.]+)\..*/$1/}_$2_block'] = array
+  (
+    'info' => '$0'${3:
+  , 'description' => '$4'}
+  );
+
+  return \$blocks;
 }
 ]]></content>
 	<tabTrigger>h.block_info</tabTrigger>
