@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+'#attributes' => array
+  (${1:
+    'class' => array($2)}
+  )
+]]></content>
+	<tabTrigger>attributes</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
